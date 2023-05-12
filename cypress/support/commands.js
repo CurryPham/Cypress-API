@@ -35,6 +35,12 @@ let headers = {
         userId: 1,
     }
 
+/**
+ * @memberOf Cypress
+ * @method createPost
+ * @param {Object} postBody
+ * */
+
 Cypress.Commands.add("createPost", postBody => {
     cy.request({
         method: 'POST',
@@ -44,6 +50,12 @@ Cypress.Commands.add("createPost", postBody => {
 })
 })
 
+
+/**
+ * @memberOf Cypress
+ * @method getPost
+ * @param {Object} getNum
+ * */
 Cypress.Commands.add("getPost", getNum => {
     cy.request({
         method: 'GET',
@@ -51,6 +63,12 @@ Cypress.Commands.add("getPost", getNum => {
 })
 })
 
+
+/**
+ * @memberOf Cypress
+ * @method updatePost
+ * @param {Object} putNum
+ * */
 Cypress.Commands.add("updatePost", putNum => {
     cy.request({
         method: 'PUT',
@@ -60,6 +78,12 @@ Cypress.Commands.add("updatePost", putNum => {
 })
 })
 
+
+/**
+ * @memberOf Cypress
+ * @method deletePost
+ * @param {Object} deleteBody
+ * */
 Cypress.Commands.add("deletePost", deleteBody => {
     cy.request({
         method: 'DELETE',
