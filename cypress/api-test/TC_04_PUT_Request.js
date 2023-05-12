@@ -1,5 +1,5 @@
 describe('Test PUT method request', () => {
-    it('should be able to send a requeset with PU method', () => {
+    it('should be able to send a requeset with PUT method', () => {
         let url = 'https://jsonplaceholder.typicode.com/posts/1'
         let headers = {
         'Content-Type': 'application/json; charset=UTF-8',
